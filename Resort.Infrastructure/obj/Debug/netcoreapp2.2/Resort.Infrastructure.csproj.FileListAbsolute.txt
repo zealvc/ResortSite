@@ -1,0 +1,9 @@
+D:\Mom\ResortSite\Resort.Infrastructure\bin\Debug\netcoreapp2.2\Resort.Infrastructure.deps.json
+D:\Mom\ResortSite\Resort.Infrastructure\bin\Debug\netcoreapp2.2\Resort.Infrastructure.dll
+D:\Mom\ResortSite\Resort.Infrastructure\bin\Debug\netcoreapp2.2\Resort.Infrastructure.pdb
+D:\Mom\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.csprojAssemblyReference.cache
+D:\Mom\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Mom\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.AssemblyInfoInputs.cache
+D:\Mom\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.AssemblyInfo.cs
+D:\Mom\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.dll
+D:\Mom\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.pdb
