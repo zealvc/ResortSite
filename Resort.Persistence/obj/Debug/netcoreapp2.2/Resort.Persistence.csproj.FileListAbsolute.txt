@@ -7,3 +7,12 @@ D:\Mom\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.
 D:\Mom\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.AssemblyInfo.cs
 D:\Mom\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.dll
 D:\Mom\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.pdb
+E:\Internship\Development\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Persistence.deps.json
+E:\Internship\Development\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Persistence.dll
+E:\Internship\Development\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Persistence.pdb
+E:\Internship\Development\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.csprojAssemblyReference.cache
+E:\Internship\Development\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.csproj.CoreCompileInputs.cache
+E:\Internship\Development\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.AssemblyInfoInputs.cache
+E:\Internship\Development\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.AssemblyInfo.cs
+E:\Internship\Development\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.dll
+E:\Internship\Development\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.pdb

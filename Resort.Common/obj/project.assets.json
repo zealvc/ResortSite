@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ZEAL\\.nuget\\packages\\": {},
+    "C:\\Users\\SR\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Mom\\ResortSite\\Resort.Common\\Resort.Common.csproj",
+      "projectUniqueName": "E:\\Internship\\Development\\ResortSite\\Resort.Common\\Resort.Common.csproj",
       "projectName": "Resort.Common",
-      "projectPath": "D:\\Mom\\ResortSite\\Resort.Common\\Resort.Common.csproj",
-      "packagesPath": "C:\\Users\\ZEAL\\.nuget\\packages\\",
-      "outputPath": "D:\\Mom\\ResortSite\\Resort.Common\\obj\\",
+      "projectPath": "E:\\Internship\\Development\\ResortSite\\Resort.Common\\Resort.Common.csproj",
+      "packagesPath": "C:\\Users\\SR\\.nuget\\packages\\",
+      "outputPath": "E:\\Internship\\Development\\ResortSite\\Resort.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ZEAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

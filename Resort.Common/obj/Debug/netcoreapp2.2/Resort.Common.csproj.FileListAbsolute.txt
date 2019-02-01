@@ -7,3 +7,12 @@ D:\Mom\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.AssemblyIn
 D:\Mom\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.AssemblyInfo.cs
 D:\Mom\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.dll
 D:\Mom\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.pdb
+E:\Internship\Development\ResortSite\Resort.Common\bin\Debug\netcoreapp2.2\Resort.Common.deps.json
+E:\Internship\Development\ResortSite\Resort.Common\bin\Debug\netcoreapp2.2\Resort.Common.dll
+E:\Internship\Development\ResortSite\Resort.Common\bin\Debug\netcoreapp2.2\Resort.Common.pdb
+E:\Internship\Development\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.csprojAssemblyReference.cache
+E:\Internship\Development\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.csproj.CoreCompileInputs.cache
+E:\Internship\Development\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.AssemblyInfoInputs.cache
+E:\Internship\Development\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.AssemblyInfo.cs
+E:\Internship\Development\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.dll
+E:\Internship\Development\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.pdb
