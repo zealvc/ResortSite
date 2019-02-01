@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{6D2DF2BD-439C-4692-8397-7CD607A0F73E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Resort.WebUI/Controllers/AccountController.cs">
+    <Files>
+      <File FileName="Resort.WebUI/Startup.cs" Line="1" Column="1" />
+      <File FileName="Resort.WebUI/Service/IMessageService.cs" Line="10" Column="2" />
+      <File FileName="Resort.WebUI/Service/FileMessageService.cs" Line="16" Column="2" />
+      <File FileName="Resort.WebUI/Controllers/AccountController.cs" Line="165" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Src.Presentation.Resort.WebUI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
