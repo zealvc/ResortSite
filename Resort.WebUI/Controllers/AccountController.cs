@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Resort.WebUI;
 using Swashbuckle.AspNetCore.Swagger;
-
+using Resort.WebUI.Models;
 namespace Resort.WebUI.Controllers
 {
     [Route("api/[controller]")]
@@ -34,7 +34,7 @@ namespace Resort.WebUI.Controllers
         {
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
-                return Json(new Response(HttpStatusCode.BadRequest)
+                return Json(new Responses(HttpStatusCode.BadRequest)
                 {
                     Message = "email or password is null"
                 });
@@ -42,7 +42,7 @@ namespace Resort.WebUI.Controllers
 
             if (password != confirmPassword)
             {
-                return Json(new Response(HttpStatusCode.BadRequest)
+                return Json(new Responses(HttpStatusCode.BadRequest)
                 {
                     Message = "Passwords don't match!"
                 });
@@ -61,7 +61,7 @@ namespace Resort.WebUI.Controllers
             }
             catch (SqlException)
             {
-                return Json(new Response(HttpStatusCode.InternalServerError)
+                return Json(new Responses(HttpStatusCode.InternalServerError)
                 {
                     Message = "Error communicating with the database, see logs for more details"
                 });
@@ -69,10 +69,10 @@ namespace Resort.WebUI.Controllers
 
             if (!userCreationResult.Succeeded)
             {
-                return Json(new Response(HttpStatusCode.BadRequest)
+                return Json(new Responses(HttpStatusCode.BadRequest)
                 {
                     Message = "An error occurred when creating the user, see nested errors",
-                    Errors = userCreationResult.Errors.Select(x => new Response(HttpStatusCode.BadRequest)
+                    Errors = userCreationResult.Errors.Select(x => new Responses(HttpStatusCode.BadRequest)
                     {
                         Message = $"[{x.Code}] {x.Description}"
                     })
@@ -91,7 +91,7 @@ namespace Resort.WebUI.Controllers
 
             await _messageService.Send(email, "Verify your email", $"Click <a href=\"{tokenVerificationUrl}\">here</a> to verify your email");
 
-            return Json(new Response(HttpStatusCode.OK)
+            return Json(new Responses(HttpStatusCode.OK)
             {
                 Message = $"Registration completed, please verify your email - {email}"
             });
@@ -106,10 +106,10 @@ namespace Resort.WebUI.Controllers
             var emailConfirmationResult = await _userManager.ConfirmEmailAsync(user, token);
             if (!emailConfirmationResult.Succeeded)
             {
-                return new RedirectResult("http://dev.localhost.com:4000/registration.html");
+                return new RedirectResult("https://localhost:5001/registration.html");
             }
 
-            return new RedirectResult("http://dev.localhost.com:4000/");
+            return new RedirectResult("https://localhost:5001/");
         }
 
         [HttpPost]
@@ -118,7 +118,7 @@ namespace Resort.WebUI.Controllers
         {
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
-                return Json(new Response(HttpStatusCode.BadRequest)
+                return Json(new Responses(HttpStatusCode.BadRequest)
                 {
                     Message = "email or password is null"
                 });
@@ -127,7 +127,7 @@ namespace Resort.WebUI.Controllers
             var user = await _userManager.FindByEmailAsync(email);
             if (user == null)
             {
-                return Json(new Response(HttpStatusCode.BadRequest)
+                return Json(new Responses(HttpStatusCode.BadRequest)
                 {
                     Message = "Invalid Login and/or password"
                 });
@@ -135,7 +135,7 @@ namespace Resort.WebUI.Controllers
 
             if (!user.EmailConfirmed)
             {
-                return Json(new Response(HttpStatusCode.BadRequest)
+                return Json(new Responses(HttpStatusCode.BadRequest)
                 {
                     Message = "Email not confirmed, please check your email for confirmation link"
                 });
@@ -144,13 +144,13 @@ namespace Resort.WebUI.Controllers
             var passwordSignInResult = await _signInManager.PasswordSignInAsync(user, password, isPersistent: true, lockoutOnFailure: false);
             if (!passwordSignInResult.Succeeded)
             {
-                return Json(new Response(HttpStatusCode.BadRequest)
+                return Json(new Responses(HttpStatusCode.BadRequest)
                 {
                     Message = "Invalid Login and/or password"
                 });
             }
 
-            return Json(new Response(HttpStatusCode.OK)
+            return Json(new Responses(HttpStatusCode.OK)
             {
                 Message = "Cookie created"
             });
@@ -162,7 +162,7 @@ namespace Resort.WebUI.Controllers
         {
             await _signInManager.SignOutAsync();
 
-            return Json(new Response(HttpStatusCode.OK)
+            return Json(new Responses(HttpStatusCode.OK)
             {
                 Message = "You have been successfully logged out"
             });
