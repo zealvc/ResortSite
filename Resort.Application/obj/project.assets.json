@@ -243,7 +243,7 @@
   },
   "libraries": {
     "MediatR/6.0.0": {
-      "sha512": "nQrQ4Ngy5eyS6Oi53e9oreZ8hl6RJOv8ohNExA/QZdnshLySsVUEAAqTDIEOobjPzwQ2itTB5fukdfRV4eGbQQ==",
+      "sha512": "R01T5Af1kSH9lBvlxdTeJOr+ugPwfy0FsFq15XsNAIA8GSUYwHW7lfvYGwhBynwJVXWxRwieqxOxCFEV9GO+SQ==",
       "type": "package",
       "path": "mediatr/6.0.0",
       "files": [
@@ -256,7 +256,7 @@
       ]
     },
     "MediatR.Extensions.Microsoft.DependencyInjection/6.0.1": {
-      "sha512": "sbgLhEJv6TyO4pd2MVMx+1qEpU0POrFOswRLNmYgULU2Rig0j8pFd0gLLxkjfymnTJrRVQT0D/E7Unyds7+oGw==",
+      "sha512": "FXv928QVR3DGzeVvRLprONvwi8SiWTajlW+MQQeCwhmbkbSBbf/fhiqcaeTToat11qQl5WFUab0ymFJou2kibA==",
       "type": "package",
       "path": "mediatr.extensions.microsoft.dependencyinjection/6.0.1",
       "files": [
@@ -756,23 +756,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SR\\.nuget\\packages\\": {},
+    "C:\\Users\\serey\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Internship\\Development\\ResortSite\\Resort.Application\\Resort.Application.csproj",
+      "projectUniqueName": "E:\\Project\\ResortSite\\Resort.Application\\Resort.Application.csproj",
       "projectName": "Resort.Application",
-      "projectPath": "E:\\Internship\\Development\\ResortSite\\Resort.Application\\Resort.Application.csproj",
-      "packagesPath": "C:\\Users\\SR\\.nuget\\packages\\",
-      "outputPath": "E:\\Internship\\Development\\ResortSite\\Resort.Application\\obj\\",
+      "projectPath": "E:\\Project\\ResortSite\\Resort.Application\\Resort.Application.csproj",
+      "packagesPath": "C:\\Users\\serey\\.nuget\\packages\\",
+      "outputPath": "E:\\Project\\ResortSite\\Resort.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\SR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\serey\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SR\\.nuget\\packages\\": {},
+    "C:\\Users\\serey\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Internship\\Development\\ResortSite\\Resort.Infrastructure\\Resort.Infrastructure.csproj",
+      "projectUniqueName": "E:\\Project\\ResortSite\\Resort.Infrastructure\\Resort.Infrastructure.csproj",
       "projectName": "Resort.Infrastructure",
-      "projectPath": "E:\\Internship\\Development\\ResortSite\\Resort.Infrastructure\\Resort.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\SR\\.nuget\\packages\\",
-      "outputPath": "E:\\Internship\\Development\\ResortSite\\Resort.Infrastructure\\obj\\",
+      "projectPath": "E:\\Project\\ResortSite\\Resort.Infrastructure\\Resort.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\serey\\.nuget\\packages\\",
+      "outputPath": "E:\\Project\\ResortSite\\Resort.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\SR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\serey\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
