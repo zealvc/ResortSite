@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resort.WebUI", "Resort.WebU
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{2A1E1AB9-7F04-4AC4-84EE-9067893B17D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{437E96CB-9B51-4204-AA40-6EB48F1E79B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resort.Test", "ConsoleApp1\Resort.Test.csproj", "{437E96CB-9B51-4204-AA40-6EB48F1E79B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

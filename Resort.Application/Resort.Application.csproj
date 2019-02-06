@@ -16,38 +16,4 @@
     <None Remove="Accommodation\HouseRule\Category - Copy %25284%2529\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Accommodation\Accommodation\Commands\" />
-    <Folder Include="Accommodation\Accommodation\Models\" />
-    <Folder Include="Accommodation\Accommodation\Queries\" />
-    <Folder Include="Accommodation\Amenity\Commands\" />
-    <Folder Include="Accommodation\Amenity\Models\" />
-    <Folder Include="Accommodation\Amenity\Queries\" />
-    <Folder Include="Accommodation\Accessibility\Commands\" />
-    <Folder Include="Accommodation\Accessibility\Models\" />
-    <Folder Include="Accommodation\Accessibility\Queries\" />
-    <Folder Include="Accommodation\Rating - Copy %282%29\Commands\" />
-    <Folder Include="Accommodation\Rating - Copy %282%29\Models\" />
-    <Folder Include="Accommodation\Rating - Copy %282%29\Queries\" />
-    <Folder Include="Accommodation\AccessibilityName\Commands\" />
-    <Folder Include="Accommodation\AccessibilityName\Models\" />
-    <Folder Include="Accommodation\AccessibilityName\Queries\" />
-    <Folder Include="Accommodation\Rating\Commands\" />
-    <Folder Include="Accommodation\Rating\Models\" />
-    <Folder Include="Accommodation\Rating\Queries\" />
-    <Folder Include="Accommodation\Feature\Commands\" />
-    <Folder Include="Accommodation\Feature\Models\" />
-    <Folder Include="Accommodation\Feature\Queries\" />
-    <Folder Include="Accommodation\Location\Commands\" />
-    <Folder Include="Accommodation\Location\Models\" />
-    <Folder Include="Accommodation\Location\Queries\" />
-    <Folder Include="Accommodation\HouseRule\Commands\" />
-    <Folder Include="Accommodation\HouseRule\Models\" />
-    <Folder Include="Accommodation\HouseRule\Queries\" />
-    <Folder Include="Category\Commands\Delete\" />
-    <Folder Include="Category\Commands\Retrieve\" />
-    <Folder Include="Category\Commands\Update\" />
-    <Folder Include="Category\Queries\" />
-  </ItemGroup>
-
 </Project>
