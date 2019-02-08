@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "3ad3a868f2825cb42003d9990942cd5cfa2e81e9"
+    "signature": "c5161e82787d59faf0588dff6b1a8486195a75c1"
   },
   "compilationOptions": {
     "defines": [
@@ -30,6 +30,8 @@
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.0",
           "Resort.Application": "1.0.0",
+          "Resort.Common": "1.0.0",
+          "Resort.Persistence": "1.0.0",
           "Swashbuckle.AspNetCore": "4.0.1"
         },
         "runtime": {
@@ -37,6 +39,20 @@
         },
         "compile": {
           "Resort.WebUI.dll": {}
+        }
+      },
+      "InstaSharper/1.4.82": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/InstaSharper.dll": {
+            "assemblyVersion": "1.4.82.0",
+            "fileVersion": "1.4.82.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/InstaSharper.dll": {}
         }
       },
       "MediatR/6.0.0": {
@@ -609,6 +625,7 @@
       },
       "Resort.Application/1.0.0": {
         "dependencies": {
+          "InstaSharper": "1.4.82",
           "MediatR.Extensions.Microsoft.DependencyInjection": "6.0.1"
         },
         "runtime": {
@@ -616,6 +633,28 @@
         },
         "compile": {
           "Resort.Application.dll": {}
+        }
+      },
+      "Resort.Common/1.0.0": {
+        "dependencies": {
+          "InstaSharper": "1.4.82"
+        },
+        "runtime": {
+          "Resort.Common.dll": {}
+        },
+        "compile": {
+          "Resort.Common.dll": {}
+        }
+      },
+      "Resort.Persistence/1.0.0": {
+        "dependencies": {
+          "Resort.Application": "1.0.0"
+        },
+        "runtime": {
+          "Resort.Persistence.dll": {}
+        },
+        "compile": {
+          "Resort.Persistence.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3639,6 +3678,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "InstaSharper/1.4.82": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w1oZTJfHERgvoZLoP8wOPsITkKAzSV0s4la78XGbWzqe0tpr6PtKkSf+2AA7ChuekOZzRfyLn30SCZ69SDYJWQ==",
+      "path": "instasharper/1.4.82",
+      "hashPath": "instasharper.1.4.82.nupkg.sha512"
+    },
     "MediatR/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3857,6 +3903,16 @@
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
     "Resort.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Resort.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Resort.Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

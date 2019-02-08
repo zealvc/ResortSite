@@ -16,3 +16,12 @@ E:\Internship\Development\ResortSite\Resort.Application\obj\Debug\netcoreapp2.2\
 E:\Internship\Development\ResortSite\Resort.Application\obj\Debug\netcoreapp2.2\Resort.Application.AssemblyInfo.cs
 E:\Internship\Development\ResortSite\Resort.Application\obj\Debug\netcoreapp2.2\Resort.Application.dll
 E:\Internship\Development\ResortSite\Resort.Application\obj\Debug\netcoreapp2.2\Resort.Application.pdb
+C:\Users\SR\Desktop\ResortSite\Resort.Application\bin\Debug\netcoreapp2.2\Resort.Application.deps.json
+C:\Users\SR\Desktop\ResortSite\Resort.Application\bin\Debug\netcoreapp2.2\Resort.Application.dll
+C:\Users\SR\Desktop\ResortSite\Resort.Application\bin\Debug\netcoreapp2.2\Resort.Application.pdb
+C:\Users\SR\Desktop\ResortSite\Resort.Application\obj\Debug\netcoreapp2.2\Resort.Application.csprojAssemblyReference.cache
+C:\Users\SR\Desktop\ResortSite\Resort.Application\obj\Debug\netcoreapp2.2\Resort.Application.csproj.CoreCompileInputs.cache
+C:\Users\SR\Desktop\ResortSite\Resort.Application\obj\Debug\netcoreapp2.2\Resort.Application.AssemblyInfoInputs.cache
+C:\Users\SR\Desktop\ResortSite\Resort.Application\obj\Debug\netcoreapp2.2\Resort.Application.AssemblyInfo.cs
+C:\Users\SR\Desktop\ResortSite\Resort.Application\obj\Debug\netcoreapp2.2\Resort.Application.dll
+C:\Users\SR\Desktop\ResortSite\Resort.Application\obj\Debug\netcoreapp2.2\Resort.Application.pdb

@@ -16,3 +16,17 @@ E:\Internship\Development\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\
 E:\Internship\Development\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.AssemblyInfo.cs
 E:\Internship\Development\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.dll
 E:\Internship\Development\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.pdb
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Persistence.deps.json
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Persistence.dll
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Persistence.pdb
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.dll
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Application.dll
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Application.pdb
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.xml
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.csprojAssemblyReference.cache
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.AssemblyInfoInputs.cache
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.AssemblyInfo.cs
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.csproj.CopyComplete
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.dll
+C:\Users\SR\Desktop\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.pdb
