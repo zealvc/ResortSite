@@ -4,9 +4,7 @@ using System.Text;
 
 namespace Resort.Application.Accommodation.Models
 {
-    class AccommodationModel
+    public class AccommodationHouseRuleModel
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
     }
 }

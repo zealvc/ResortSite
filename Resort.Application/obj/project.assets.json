@@ -854,6 +854,41 @@
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
         }
+      },
+      "Resort.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.2.1",
+          "Npgsql": "4.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "2.2.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.1"
+        },
+        "compile": {
+          "bin/placeholder/Resort.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resort.Domain.dll": {}
+        }
+      },
+      "Resort.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.2.1",
+          "Npgsql": "4.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "2.2.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.1",
+          "Resort.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resort.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resort.Persistence.dll": {}
+        }
       }
     }
   },
@@ -3315,6 +3350,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Resort.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Resort.Domain/Resort.Domain.csproj",
+      "msbuildProject": "../Resort.Domain/Resort.Domain.csproj"
+    },
+    "Resort.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Resort.Persistence/Resort.Persistence.csproj",
+      "msbuildProject": "../Resort.Persistence/Resort.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3324,7 +3369,8 @@
       "Microsoft.NETCore.App >= 2.2.0",
       "Npgsql >= 4.0.4",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 2.2.0",
-      "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.1"
+      "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.1",
+      "Resort.Persistence >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3356,7 +3402,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Development\\Web Development\\Project\\ResortSite\\Resort.Persistence\\Resort.Persistence.csproj": {
+              "projectPath": "E:\\Development\\Web Development\\Project\\ResortSite\\Resort.Persistence\\Resort.Persistence.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

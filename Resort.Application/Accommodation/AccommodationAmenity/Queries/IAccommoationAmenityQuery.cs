@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Resort.Application.Interface;
 using Resort.Application.Accommodation.Models;
+using Resort.Persistence.Repository_and_Unit_of_Work_Interface;
 
 namespace Resort.Application.Accommodation.Queries
 {
-    interface AccommodationQuery : IRepository<AccommodationModel>
+    public interface IAccommoationAmenityQuery : IRepository<AccommodationAmenityModel>
     {
     }
 }
