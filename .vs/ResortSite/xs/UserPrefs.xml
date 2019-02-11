@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{6D2DF2BD-439C-4692-8397-7CD607A0F73E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Resort.WebUI/ViewModels/Validations/RegistrationViewModelValidator.cs">
+    <Files>
+      <File FileName="Resort.WebUI/Startup.cs" Line="119" Column="1" />
+      <File FileName="Resort.WebUI/Controllers/AccountsController.cs" Line="46" Column="100" />
+      <File FileName="Resort.WebUI/Controllers/ExternalAuthController.cs" Line="66" Column="50" />
+      <File FileName="Resort.WebUI/Models/Entities/AppUser.cs" Line="14" Column="43" />
+      <File FileName="Resort.WebUI/Models/FacebookApiResponses.cs" Line="19" Column="5" />
+      <File FileName="Resort.WebUI/Models/FacebookAuthSettings.cs" Line="11" Column="1" />
+      <File FileName="Resort.WebUI/ViewModels/CredentialsViewModel.cs" Line="14" Column="1" />
+      <File FileName="Resort.WebUI/ViewModels/FacebookAuthViewModel.cs" Line="1" Column="1" />
+      <File FileName="Resort.WebUI/appsettings.json" Line="15" Column="1" />
+      <File FileName="Resort.WebUI/Controllers/AuthController.cs" Line="32" Column="53" />
+      <File FileName="Resort.WebUI/ViewModels/Validations/RegistrationViewModelValidator.cs" Line="14" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Src.Presentation.Resort.WebUI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
