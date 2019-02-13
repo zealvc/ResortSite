@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Resort.Domain.Entities;
+using System.Diagnostics;
 
 namespace Resort.WebUI.Controllers
 {
@@ -27,8 +29,16 @@ namespace Resort.WebUI.Controllers
 
         // POST: api/Test
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromQuery(Name = "ids1")]int[] ids)
         {
+            Debug.WriteLine(ids.Count());
+            //ResortSiteDbContext context = new ResortSiteDbContext();
+            //Amenity amenity = context.Amenity.Single(i => i.Id == 5);
+            //Debug.WriteLine(amenity.Description);
+            //            Amenity adr = new Amenity() { Name = "Mom", Description = "1st insert.", Image = "Test img", LanguageId =1 };
+            //            context.Amenity.Add(adr);
+            //            await context.SaveChangesAsync();
+            Debug.WriteLine("Finish!!!!");
         }
 
         // PUT: api/Test/5
