@@ -7,23 +7,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1ECCD725-633
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8527CA33-6DA6-4649-8065-A404C1C8D437}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resort.Common", "Resort.Common\Resort.Common.csproj", "{EE343B68-A7B0-49DA-A5F2-FA873F96459D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resort.Common", "Resort.Common\Resort.Common.csproj", "{EE343B68-A7B0-49DA-A5F2-FA873F96459D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5F248DC0-C2BF-47F2-B0B2-CF205C9A8A4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resort.Application", "Resort.Application\Resort.Application.csproj", "{34829E61-9633-4BBB-820A-3346C2E2B725}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resort.Application", "Resort.Application\Resort.Application.csproj", "{34829E61-9633-4BBB-820A-3346C2E2B725}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resort.Domain", "Resort.Domain\Resort.Domain.csproj", "{0558B48E-51B8-49A9-B659-D4CF273B91A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resort.Domain", "Resort.Domain\Resort.Domain.csproj", "{0558B48E-51B8-49A9-B659-D4CF273B91A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D088A9E4-7002-4ABA-8130-8830C92247C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resort.Infrastructure", "Resort.Infrastructure\Resort.Infrastructure.csproj", "{6317A350-0945-44D7-9F40-93E41D15D38D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resort.Infrastructure", "Resort.Infrastructure\Resort.Infrastructure.csproj", "{6317A350-0945-44D7-9F40-93E41D15D38D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resort.Persistence", "Resort.Persistence\Resort.Persistence.csproj", "{FA010813-54A9-404A-9B32-AC5C902FDA27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resort.Persistence", "Resort.Persistence\Resort.Persistence.csproj", "{FA010813-54A9-404A-9B32-AC5C902FDA27}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{EE33BF86-5677-4818-814F-858AB2ADD58E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resort.WebUI", "Resort.WebUI\Resort.WebUI.csproj", "{6D2DF2BD-439C-4692-8397-7CD607A0F73E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resort.WebUI", "Resort.WebUI\Resort.WebUI.csproj", "{6D2DF2BD-439C-4692-8397-7CD607A0F73E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
