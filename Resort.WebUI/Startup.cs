@@ -40,13 +40,38 @@ namespace Resort.WebUI
                 System.Diagnostics.Debug.WriteLine("#################################3");
 
                 // Provide the Google Client ID
-                options.ClientId = "1055002010138-8qsq94s0rgs7ht12bbuvjqsia5dr28gj.apps.googleusercontent.com";
+                options.ClientId = Configuration["Authentication:Google:ClientId"];
                 // Provide the Google Secret
-                options.ClientSecret = "ASgPoFNAcASDrV9V-RTZZbsr";
+                options.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
                 options.Scope.Add("https://www.googleapis.com/auth/plus.login");
                 options.ClaimActions.MapJsonKey(ClaimTypes.Gender, "gender");
                 options.SaveTokens = true;
                 options.Events.OnCreatingTicket = ctx =>
+                {
+                    List<AuthenticationToken> tokens = ctx.Properties.GetTokens()
+                        as List<AuthenticationToken>;
+                    tokens.Add(new AuthenticationToken()
+                    {
+                        Name = "TicketCreated",
+                        Value = DateTime.UtcNow.ToString()
+                    });
+                    ctx.Properties.StoreTokens(tokens);
+                    return Task.CompletedTask;
+                };
+            });
+
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                System.Diagnostics.Debug.WriteLine("#################################3");
+
+                // Provide the Google Client ID
+                facebookOptions.ClientId = Configuration["Authentication:Facebook:AppId"];
+                // Provide the Google Secret
+                facebookOptions.ClientSecret = Configuration["Authentication:Facebook:AppSecret"];
+                //facebookOptions.Scope.Add("https://www.googleapis.com/auth/plus.login");
+                facebookOptions.ClaimActions.MapJsonKey(ClaimTypes.Gender, "gender");
+                facebookOptions.SaveTokens = true;
+                facebookOptions.Events.OnCreatingTicket = ctx =>
                 {
                     List<AuthenticationToken> tokens = ctx.Properties.GetTokens()
                         as List<AuthenticationToken>;
