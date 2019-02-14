@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{6D2DF2BD-439C-4692-8397-7CD607A0F73E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Resort.WebUI/Extensions/UrlHelperExtensions.cs">
+    <Files>
+      <File FileName="Resort.WebUI/Startup.cs" Line="1" Column="1" />
+      <File FileName="Resort.WebUI/Controllers/AccountController.cs" Line="17" Column="23" />
+      <File FileName="Resort.WebUI/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Resort.WebUI/Controllers/ManageController.cs" Line="1" Column="1" />
+      <File FileName="Resort.WebUI/Extensions/EmailSenderExtensions.cs" Line="1" Column="1" />
+      <File FileName="Resort.WebUI/Extensions/UrlHelperExtensions.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Src.Presentation.Resort.WebUI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
