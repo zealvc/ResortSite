@@ -21,15 +21,19 @@ namespace Resort.WebUI.Controllers
     {
         private readonly ApplicationDbContext _appDbContext;
         private readonly UserManager<AppUser> _userManager;
+        private readonly UserManager<GoogleUser> _userManagergg;
         private readonly FacebookAuthSettings _fbAuthSettings;
+        private readonly GoogleAuthSettings _ggAuthSettings;
         private readonly IJwtFactory _jwtFactory;
         private readonly JwtIssuerOptions _jwtOptions;
         private static readonly HttpClient Client = new HttpClient();
 
-        public ExternalAuthController(IOptions<FacebookAuthSettings> fbAuthSettingsAccessor, UserManager<AppUser> userManager, ApplicationDbContext appDbContext, IJwtFactory jwtFactory, IOptions<JwtIssuerOptions> jwtOptions)
+        public ExternalAuthController(IOptions<FacebookAuthSettings> fbAuthSettingsAccessor, IOptions<GoogleAuthSettings> ggAuthSettingsAccessor, UserManager<AppUser> userManager, UserManager<GoogleUser> userManagergg, ApplicationDbContext appDbContext, IJwtFactory jwtFactory, IOptions<JwtIssuerOptions> jwtOptions)
         {
             _fbAuthSettings = fbAuthSettingsAccessor.Value;
+            _ggAuthSettings = ggAuthSettingsAccessor.Value;
             _userManager = userManager;
+            _userManagergg = userManagergg;
             _appDbContext = appDbContext;
             _jwtFactory = jwtFactory;
             _jwtOptions = jwtOptions.Value;
@@ -75,6 +79,62 @@ namespace Resort.WebUI.Controllers
                 if (!result.Succeeded) return new BadRequestObjectResult(Errors.AddErrorsToModelState(result, ModelState));
 
                 await _appDbContext.Customers.AddAsync(new Customer { IdentityId = appUser.Id, DateOfBirth = "", Locale = userInfo.Locale, Gender = userInfo.Gender });
+                await _appDbContext.SaveChangesAsync();
+            }
+
+            // generate the jwt for the local user...
+            var localUser = await _userManager.FindByNameAsync(userInfo.Email);
+
+            if (localUser == null)
+            {
+                return BadRequest(Errors.AddErrorToModelState("login_failure", "Failed to create local user account.", ModelState));
+            }
+
+            var jwt = await Tokens.GenerateJwt(_jwtFactory.GenerateClaimsIdentity(localUser.UserName, localUser.Id),
+              _jwtFactory, localUser.UserName, _jwtOptions, new JsonSerializerSettings { Formatting = Formatting.Indented });
+
+            return new OkObjectResult(jwt);
+        }
+        // POST api/externalauth/google
+        [HttpPost]
+        public async Task<IActionResult> Google([FromBody]GoogleAuthViewModels model)
+        {
+            // 1.generate an app access token
+            var appAccessTokenResponse = await Client.GetStringAsync($"https://accounts.google.com/o/oauth2/auth?client_id={_ggAuthSettings.ClientId}&client_secret={_ggAuthSettings.ClientSecret}&grant_type=client_credentials");
+            var appAccessToken = JsonConvert.DeserializeObject<GoogleAppAccessToken>(appAccessTokenResponse);
+            // 2. validate the user access token
+            var userAccessTokenValidationResponse = await Client.GetStringAsync($"https://www.googleapis.com/oauth2/v3/tokeninfo?input_token={model.AccessToken}&access_token={appAccessToken.AccessToken}");
+            var userAccessTokenValidation = JsonConvert.DeserializeObject<GoogleUserAccessTokenValidation>(userAccessTokenValidationResponse);
+
+            if (!userAccessTokenValidation.Data.IsValid)
+            {
+                return BadRequest(Errors.AddErrorToModelState("login_failure", "Invalid google token.", ModelState));
+            }
+
+            // 3. we've got a valid token so we can request user data from fb
+            var userInfoResponse = await Client.GetStringAsync($"https://www.googleapis.com/drive/v2/files?=id,email,first_name,last_name,name,gender,locale,birthday,picture&access_token={model.AccessToken}");
+            var userInfo = JsonConvert.DeserializeObject<GoogleUserData>(userInfoResponse);
+
+            // 4. ready to create the local user account (if necessary) and jwt
+            var user = await _userManager.FindByEmailAsync(userInfo.Email);
+
+            if (user == null)
+            {
+                var ggUser = new GoogleUser
+                {
+                    FirstName = userInfo.FirstName,
+                    LastName = userInfo.LastName,
+                    GoogleId = userInfo.Id,
+                    Email = userInfo.Email,
+                    UserName = userInfo.Email,
+                    PictureUrl = userInfo.Picture.Data.Url
+                };
+
+                var result = await _userManagergg.CreateAsync(ggUser, Convert.ToBase64String(Guid.NewGuid().ToByteArray()).Substring(0, 8));
+
+                if (!result.Succeeded) return new BadRequestObjectResult(Errors.AddErrorsToModelState(result, ModelState));
+
+                await _appDbContext.Customers.AddAsync(new Customer { IdentityId = ggUser.Id, DateOfBirth = "", Locale = userInfo.Locale, Gender = userInfo.Gender });
                 await _appDbContext.SaveChangesAsync();
             }
 

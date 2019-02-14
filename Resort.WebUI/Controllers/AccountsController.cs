@@ -29,24 +29,26 @@ namespace Resort.WebUI.Controllers
     [HttpPost]
     public async Task<IActionResult> Post([FromBody]RegistrationViewModel model)
     {
-      // simulate slightly longer running operation to show UI state change
-        await Task.Delay(250);
+            System.Diagnostics.Debug.WriteLine("#################################");
 
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(ModelState);
-        }
+            // simulate slightly longer running operation to show UI state change
+            await Task.Delay(250);
 
-        var userIdentity = _mapper.Map<AppUser>(model);
+            if (!ModelState.IsValid)
+            {
+               return BadRequest(ModelState);
+            }
 
-        var result = await _userManager.CreateAsync(userIdentity, model.Password);
+            var userIdentity = _mapper.Map<AppUser>(model);
 
-        if (!result.Succeeded) return new BadRequestObjectResult(Errors.AddErrorsToModelState(result, ModelState));
+            var result = await _userManager.CreateAsync(userIdentity, model.Password);
 
-        await _appDbContext.Customers.AddAsync(new Customer { IdentityId = userIdentity.Id, DateOfBirth = model.DateOfBirth });
-        await _appDbContext.SaveChangesAsync();
+            if (!result.Succeeded) return new BadRequestObjectResult(Errors.AddErrorsToModelState(result, ModelState));
 
-        return new OkObjectResult("Account created");
+            await _appDbContext.Customers.AddAsync(new Customer { IdentityId = userIdentity.Id, DateOfBirth = model.DateOfBirth });
+            await _appDbContext.SaveChangesAsync();
+
+            return new OkObjectResult("Account created");
     }
   }
 }

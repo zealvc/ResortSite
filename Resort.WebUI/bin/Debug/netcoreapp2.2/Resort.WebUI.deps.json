@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "dd0efb1d4aff8d50ad2fee8a75e640c270e070fb"
+    "signature": "efd44fee121885a7f935ac33e32ebc62ada10a08"
   },
   "compilationOptions": {
     "defines": [
@@ -25,7 +25,7 @@
       "Resort.WebUI/1.0.0": {
         "dependencies": {
           "AutoMapper": "8.0.0",
-          "FluentValidation": "8.1.3",
+          "FluentValidation.AspNetCore": "7.4.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
@@ -54,18 +54,30 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
-      "FluentValidation/8.1.3": {
-        "dependencies": {
-          "System.ComponentModel.Annotations": "4.5.0"
-        },
+      "FluentValidation/7.4.0": {
         "runtime": {
           "lib/netstandard2.0/FluentValidation.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.1.3.0"
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.4.0.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/7.4.0": {
+        "dependencies": {
+          "FluentValidation": "7.4.0",
+          "Microsoft.AspNetCore.Mvc": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.4.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -3638,12 +3650,19 @@
       "path": "automapper/8.0.0",
       "hashPath": "automapper.8.0.0.nupkg.sha512"
     },
-    "FluentValidation/8.1.3": {
+    "FluentValidation/7.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OHV6NFyGKP+v8us+X+yJ5hjFEjiJUp6MJyRNzcf4jc7GnRHsrmBwV6IyrQQ65a73r8ikaszH33InQG9ANB5j2g==",
-      "path": "fluentvalidation/8.1.3",
-      "hashPath": "fluentvalidation.8.1.3.nupkg.sha512"
+      "sha512": "sha512-DogVPPbgys/FgvoicjAVWj2N1FcyADUciaymzIeAIKgI06zFIql36OU/jYjpJVWANwnwUi9wWN5AheVBV8D1yg==",
+      "path": "fluentvalidation/7.4.0",
+      "hashPath": "fluentvalidation.7.4.0.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/7.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IK0BgAcc9qf5JLFhVIZ94372mKosmUCcOnKDfk0jkvj+NlrdROgsjYj7+jmis2dTw6ETe63Br4+FTu2DP39e4g==",
+      "path": "fluentvalidation.aspnetcore/7.4.0",
+      "hashPath": "fluentvalidation.aspnetcore.7.4.0.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
@@ -3858,7 +3877,7 @@
     "Microsoft.AspNetCore/2.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uDkGeWmztzD/GzRRyAnnnrKZ/t4WY6Uks8OF1RzdA0VVeUmgsCHThlXQ7U5zNWzIz1E5s9WVYQhqgc8NoNVvHQ==",
+      "sha512": "sha512-OUd/2xD1c/uAhuq9w7kd6VLkONNcAigHHVL6+QVEkOt5tpUjixj7B0UncAQyXxvndV+OEVkFDxrogCmHg7aU2g==",
       "path": "microsoft.aspnetcore/2.2.0",
       "hashPath": "microsoft.aspnetcore.2.2.0.nupkg.sha512"
     },
@@ -4159,7 +4178,7 @@
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/2.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-U+msCshRlyrAkTaI4o8pXDmz9Lyu8MS9rP2alKSKloia2PR0uyiRI69Kv4Crc+BITqswhtq2Z2FFvyLa5b0PCw==",
+      "sha512": "sha512-9q1otu2A3VRPKg6DciIXGoePmS4L1bmSngLvX/OW96u62BLrNnDwk1jzCDEemwl+OUZV8/rZzaqHLOSY7lFUiA==",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/2.2.0",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.2.2.0.nupkg.sha512"
     },
@@ -4201,7 +4220,7 @@
     "Microsoft.AspNetCore.Mvc/2.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-59NchgRWqXmXdmY8W4O6qda4odf0Fc5UgVsUj57Nr5IMMQ2MKNDMeoBE6VjDQiNP5Oteu15qj3FfrbuwwgYa1Q==",
+      "sha512": "sha512-iBo7sdfDn4k8ryojNATAC1fX8shIv+PTJL+zZa2MB20fmwKPsjLTj6oT6PFIJNdm9QHL5kdA3CO+o/CnuhbzjA==",
       "path": "microsoft.aspnetcore.mvc/2.2.0",
       "hashPath": "microsoft.aspnetcore.mvc.2.2.0.nupkg.sha512"
     },
@@ -4873,7 +4892,7 @@
     "Microsoft.Extensions.Logging.Debug/2.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kvnuNr6YzK33u+o9BheEOxOWiyMtScthidlqmYHj9xMEi3oAf1gpmD7w4LBKSjQFVVw6KWWxx0/zU4GRTkQ3Ow==",
+      "sha512": "sha512-bOD6THB3a9RlutNqOvyIDId1sKYA7Y2pifMJtNRuesb9J80qU/rKI0NGdKQVCYGsViSJ81c7x92lM42kAUBKJw==",
       "path": "microsoft.extensions.logging.debug/2.2.0",
       "hashPath": "microsoft.extensions.logging.debug.2.2.0.nupkg.sha512"
     },

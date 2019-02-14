@@ -15,16 +15,26 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
-      "FluentValidation/8.1.3": {
+      "FluentValidation/7.4.0": {
         "type": "package",
-        "dependencies": {
-          "System.ComponentModel.Annotations": "4.4.1"
-        },
         "compile": {
           "lib/netstandard2.0/FluentValidation.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/7.4.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "7.4.0",
+          "Microsoft.AspNetCore.Mvc": "2.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3146,6 +3156,19 @@
           }
         }
       },
+      "Sendgrid/9.10.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "1.1.2",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/SendGrid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SendGrid.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -4823,22 +4846,34 @@
         "lib/netstandard2.0/AutoMapper.xml"
       ]
     },
-    "FluentValidation/8.1.3": {
-      "sha512": "OHV6NFyGKP+v8us+X+yJ5hjFEjiJUp6MJyRNzcf4jc7GnRHsrmBwV6IyrQQ65a73r8ikaszH33InQG9ANB5j2g==",
+    "FluentValidation/7.4.0": {
+      "sha512": "DogVPPbgys/FgvoicjAVWj2N1FcyADUciaymzIeAIKgI06zFIql36OU/jYjpJVWANwnwUi9wWN5AheVBV8D1yg==",
       "type": "package",
-      "path": "fluentvalidation/8.1.3",
+      "path": "fluentvalidation/7.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
-        "fluentvalidation.8.1.3.nupkg.sha512",
+        "fluentvalidation.7.4.0.nupkg.sha512",
         "fluentvalidation.nuspec",
         "lib/net45/FluentValidation.dll",
         "lib/net45/FluentValidation.xml",
-        "lib/netstandard1.1/FluentValidation.dll",
-        "lib/netstandard1.1/FluentValidation.xml",
-        "lib/netstandard1.6/FluentValidation.dll",
-        "lib/netstandard1.6/FluentValidation.xml",
+        "lib/netstandard1.0/FluentValidation.dll",
+        "lib/netstandard1.0/FluentValidation.xml",
         "lib/netstandard2.0/FluentValidation.dll",
         "lib/netstandard2.0/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/7.4.0": {
+      "sha512": "IK0BgAcc9qf5JLFhVIZ94372mKosmUCcOnKDfk0jkvj+NlrdROgsjYj7+jmis2dTw6ETe63Br4+FTu2DP39e4g==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/7.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.aspnetcore.7.4.0.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/netstandard2.0/FluentValidation.AspNetCore.dll",
+        "lib/netstandard2.0/FluentValidation.AspNetCore.xml"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -4859,7 +4894,7 @@
       ]
     },
     "Microsoft.AspNetCore/2.2.0": {
-      "sha512": "uDkGeWmztzD/GzRRyAnnnrKZ/t4WY6Uks8OF1RzdA0VVeUmgsCHThlXQ7U5zNWzIz1E5s9WVYQhqgc8NoNVvHQ==",
+      "sha512": "OUd/2xD1c/uAhuq9w7kd6VLkONNcAigHHVL6+QVEkOt5tpUjixj7B0UncAQyXxvndV+OEVkFDxrogCmHg7aU2g==",
       "type": "package",
       "path": "microsoft.aspnetcore/2.2.0",
       "files": [
@@ -5423,7 +5458,7 @@
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/2.2.0": {
-      "sha512": "U+msCshRlyrAkTaI4o8pXDmz9Lyu8MS9rP2alKSKloia2PR0uyiRI69Kv4Crc+BITqswhtq2Z2FFvyLa5b0PCw==",
+      "sha512": "9q1otu2A3VRPKg6DciIXGoePmS4L1bmSngLvX/OW96u62BLrNnDwk1jzCDEemwl+OUZV8/rZzaqHLOSY7lFUiA==",
       "type": "package",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/2.2.0",
       "files": [
@@ -5504,7 +5539,7 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc/2.2.0": {
-      "sha512": "59NchgRWqXmXdmY8W4O6qda4odf0Fc5UgVsUj57Nr5IMMQ2MKNDMeoBE6VjDQiNP5Oteu15qj3FfrbuwwgYa1Q==",
+      "sha512": "iBo7sdfDn4k8ryojNATAC1fX8shIv+PTJL+zZa2MB20fmwKPsjLTj6oT6PFIJNdm9QHL5kdA3CO+o/CnuhbzjA==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc/2.2.0",
       "files": [
@@ -6920,7 +6955,7 @@
       ]
     },
     "Microsoft.Extensions.Logging.Debug/2.2.0": {
-      "sha512": "kvnuNr6YzK33u+o9BheEOxOWiyMtScthidlqmYHj9xMEi3oAf1gpmD7w4LBKSjQFVVw6KWWxx0/zU4GRTkQ3Ow==",
+      "sha512": "bOD6THB3a9RlutNqOvyIDId1sKYA7Y2pifMJtNRuesb9J80qU/rKI0NGdKQVCYGsViSJ81c7x92lM42kAUBKJw==",
       "type": "package",
       "path": "microsoft.extensions.logging.debug/2.2.0",
       "files": [
@@ -8511,6 +8546,26 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Sendgrid/9.10.0": {
+      "sha512": "i6208SyPFvZ5bJRUbOimhBF/axjhiS4xQX71+KWPhzWUJGHbGX+yfwPrUg5y0D3deQlQz94mHeWF6AGHSZ81jQ==",
+      "type": "package",
+      "path": "sendgrid/9.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/SendGrid.dll",
+        "lib/net452/SendGrid.pdb",
+        "lib/net452/SendGrid.xml",
+        "lib/netstandard1.3/SendGrid.dll",
+        "lib/netstandard1.3/SendGrid.pdb",
+        "lib/netstandard1.3/SendGrid.xml",
+        "lib/netstandard2.0/SendGrid.dll",
+        "lib/netstandard2.0/SendGrid.pdb",
+        "lib/netstandard2.0/SendGrid.xml",
+        "sendgrid.9.10.0.nupkg.sha512",
+        "sendgrid.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/4.0.1": {
@@ -13107,11 +13162,12 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "AutoMapper >= 8.0.0",
-      "FluentValidation >= 8.1.3",
+      "FluentValidation.AspNetCore >= 7.4.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.0",
+      "Sendgrid >= 9.10.0",
       "Swashbuckle.AspNetCore >= 4.0.1"
     ]
   },
@@ -13158,9 +13214,9 @@
             "target": "Package",
             "version": "[8.0.0, )"
           },
-          "FluentValidation": {
+          "FluentValidation.AspNetCore": {
             "target": "Package",
-            "version": "[8.1.3, )"
+            "version": "[7.4.0, )"
           },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
@@ -13181,6 +13237,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.2.0, )"
+          },
+          "Sendgrid": {
+            "target": "Package",
+            "version": "[9.10.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

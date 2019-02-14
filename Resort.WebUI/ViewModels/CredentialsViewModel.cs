@@ -1,10 +1,10 @@
 ﻿ 
 using Resort.WebUI.ViewModels.Validations;
-//using FluentValidation.Attributes;
+using FluentValidation.Attributes;
 
 namespace Resort.WebUI.ViewModels
 {
-  //[Validator(typeof(CredentialsViewModelValidator))]   
+  [Validator(typeof(CredentialsViewModelValidator))]   
   public class CredentialsViewModel
   {
     public string UserName { get; set; }

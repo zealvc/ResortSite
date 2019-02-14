@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -17,6 +16,7 @@ using Resort.WebUI.Data;
 using Resort.WebUI.Helpers;
 using Resort.WebUI.Models;
 using Resort.WebUI.Models.Entities;
+using Resort.WebUI.Services;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Resort.WebUI
@@ -36,9 +36,13 @@ namespace Resort.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
-                    b => b.MigrationsAssembly("AuthWebApi")));
+            System.Diagnostics.Debug.WriteLine("#################################");
+
+
+
+            // services.AddDbContext<ApplicationDbContext>(options =>
+            //     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+            //         b => b.MigrationsAssembly("AuthWebApi")));
 
             services.AddSingleton<IJwtFactory, JwtFactory>();
 
@@ -115,7 +119,11 @@ namespace Resort.WebUI
             services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAnyOrigin()
                 .AllowAnyMethod()
                 .AllowAnyHeader()));
-
+            // requires
+            // using Microsoft.AspNetCore.Identity.UI.Services;
+            // using WebPWrecover.Services;
+            services.AddTransient<IEmailSender, EmailSender>();
+            services.Configure<AuthMessageSenderOptions>(Configuration);
 
         }
 
@@ -142,7 +150,7 @@ namespace Resort.WebUI
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Admin API V1");
             });
 
-
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseMvc();
         }
