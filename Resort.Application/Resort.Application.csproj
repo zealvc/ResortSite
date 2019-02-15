@@ -12,8 +12,25 @@
     <PackageReference Include="Npgsql" Version="4.0.4" />
   </ItemGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
   </ItemGroup>
+=======
+<ItemGroup>
+  <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
+</ItemGroup>
+
+<ItemGroup>
+  <ProjectReference Include="..\Resort.Domain\Resort.Domain.csproj" />
+  <ProjectReference Include="..\Resort.Persistence\Resort.Persistence.csproj" />
+</ItemGroup>
+>>>>>>> 931bd2418ffb4b5197f01b8131cb79661dc6c51a
+
+<ItemGroup>
+  <Reference Include="Microsoft.AspNetCore.Http.Features">
+    <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.http.features\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+  </Reference>
+</ItemGroup>
 
 </Project>

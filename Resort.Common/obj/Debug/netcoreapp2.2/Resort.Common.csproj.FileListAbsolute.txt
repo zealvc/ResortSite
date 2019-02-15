@@ -16,3 +16,12 @@ E:\Development\Web Development\Project\ResortSite\Resort.Common\obj\Debug\netcor
 E:\Development\Web Development\Project\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.AssemblyInfo.cs
 E:\Development\Web Development\Project\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.dll
 E:\Development\Web Development\Project\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.pdb
+D:\Resort Site Development\DB 4\ResortSite\Resort.Common\bin\Debug\netcoreapp2.2\Resort.Common.deps.json
+D:\Resort Site Development\DB 4\ResortSite\Resort.Common\bin\Debug\netcoreapp2.2\Resort.Common.dll
+D:\Resort Site Development\DB 4\ResortSite\Resort.Common\bin\Debug\netcoreapp2.2\Resort.Common.pdb
+D:\Resort Site Development\DB 4\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.csprojAssemblyReference.cache
+D:\Resort Site Development\DB 4\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.csproj.CoreCompileInputs.cache
+D:\Resort Site Development\DB 4\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.AssemblyInfoInputs.cache
+D:\Resort Site Development\DB 4\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.AssemblyInfo.cs
+D:\Resort Site Development\DB 4\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.dll
+D:\Resort Site Development\DB 4\ResortSite\Resort.Common\obj\Debug\netcoreapp2.2\Resort.Common.pdb
