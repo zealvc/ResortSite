@@ -12,3 +12,22 @@ D:\Mom\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.AssemblyInfo
 D:\Mom\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.RazorTargetAssemblyInfo.cache
 D:\Mom\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.dll
 D:\Mom\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.pdb
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\bin\Debug\netcoreapp2.2\Resort.WebUI.deps.json
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\bin\Debug\netcoreapp2.2\Resort.WebUI.runtimeconfig.json
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\bin\Debug\netcoreapp2.2\Resort.WebUI.runtimeconfig.dev.json
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\bin\Debug\netcoreapp2.2\Resort.WebUI.dll
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\bin\Debug\netcoreapp2.2\Resort.WebUI.pdb
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\bin\Debug\netcoreapp2.2\Resort.Domain.dll
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\bin\Debug\netcoreapp2.2\Resort.Persistence.dll
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\bin\Debug\netcoreapp2.2\Resort.Persistence.pdb
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\bin\Debug\netcoreapp2.2\Resort.Domain.pdb
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.csprojAssemblyReference.cache
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.csproj.CoreCompileInputs.cache
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.RazorAssemblyInfo.cache
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.RazorAssemblyInfo.cs
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.AssemblyInfoInputs.cache
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.AssemblyInfo.cs
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.RazorTargetAssemblyInfo.cache
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.csproj.CopyComplete
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.dll
+E:\Development\Web Development\Project\ResortSite\Resort.WebUI\obj\Debug\netcoreapp2.2\Resort.WebUI.pdb
