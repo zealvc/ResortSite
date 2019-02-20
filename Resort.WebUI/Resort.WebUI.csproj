@@ -3,6 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <Authentication:Facebook:AppId>748139398891962</Authentication:Facebook:AppId>
+    <Authentication:Facebook:AppSecret>f7f94a98e94ff07f893705d77bad9c16</Authentication:Facebook:AppSecret>
+    <Authentication:Google:ClientId>1055002010138-8qsq94s0rgs7ht12bbuvjqsia5dr28gj.apps.googleusercontent.com</Authentication:Google:ClientId>
+    <Authentication:Google:ClientSecret>ASgPoFNAcASDrV9V-RTZZbsr</Authentication:Google:ClientSecret>
   </PropertyGroup>
 
   <ItemGroup>
