@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Resort.Domain\Resort.Domain.csproj" />
+    <ProjectReference Include="..\Resort.Persistence\Resort.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Accommodation\Accommodation\Command\Delete\" />
+    <Folder Include="Accommodation\Accommodation\Command\Update\" />
+  </ItemGroup>
+
 </Project>
