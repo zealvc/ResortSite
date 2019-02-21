@@ -28,12 +28,9 @@
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.0",
-<<<<<<< HEAD
-=======
           "Resort.Application": "1.0.0",
           "Resort.Domain": "1.0.0",
           "Resort.Infrastructure": "1.0.0",
->>>>>>> 931bd2418ffb4b5197f01b8131cb79661dc6c51a
           "Resort.Persistence": "1.0.0",
           "Swashbuckle.AspNetCore": "4.0.1"
         },
@@ -768,15 +765,8 @@
         }
       },
       "System.ValueTuple/4.5.0": {},
-<<<<<<< HEAD
-=======
       "Resort.Application/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "2.2.1",
-          "Microsoft.EntityFrameworkCore.Design": "2.2.1",
-          "Npgsql": "4.0.4",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "2.2.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.1",
           "Resort.Domain": "1.0.0",
           "Resort.Persistence": "1.0.0"
         },
@@ -787,7 +777,6 @@
           "Resort.Application.dll": {}
         }
       },
->>>>>>> 931bd2418ffb4b5197f01b8131cb79661dc6c51a
       "Resort.Domain/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.2.1",
@@ -803,8 +792,6 @@
           "Resort.Domain.dll": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Resort.Infrastructure/1.0.0": {
         "runtime": {
           "Resort.Infrastructure.dll": {}
@@ -813,7 +800,6 @@
           "Resort.Infrastructure.dll": {}
         }
       },
->>>>>>> 931bd2418ffb4b5197f01b8131cb79661dc6c51a
       "Resort.Persistence/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.2.1",
@@ -4057,27 +4043,21 @@
       "path": "system.valuetuple/4.5.0",
       "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "Resort.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
->>>>>>> 931bd2418ffb4b5197f01b8131cb79661dc6c51a
     "Resort.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-<<<<<<< HEAD
-=======
     "Resort.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
->>>>>>> 931bd2418ffb4b5197f01b8131cb79661dc6c51a
     "Resort.Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,

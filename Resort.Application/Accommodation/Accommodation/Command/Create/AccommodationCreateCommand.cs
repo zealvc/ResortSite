@@ -7,8 +7,7 @@ namespace Resort.Application
 {
     public class AccommodationCreateCommand
     {
-        private readonly ResortSiteDbContext _context;
-
+        public long CategoryId { get; set; }
         public string Name { get; set; }
         public long AccommodationTypeId { get; set; }
         public string Description { get; set; }
@@ -23,33 +22,5 @@ namespace Resort.Application
         public string CancellationPolicy { get; set; }
         public DateTime? DateAdded { get; set; }
         public long? LanguageId { get; set; }
-
-        public AccommodationCreateCommand(ResortSiteDbContext context)
-        {
-            _context = context;
-        }
-
-        public void Create(AccommodationCreateCommand request)
-        {
-            var accommodation = new Accommodation
-            {
-                Name = request.Name,
-                AccommodationTypeId = request.AccommodationTypeId,
-                Description = request.Description,
-                GuestCount = request.GuestCount,
-                BedRoomCount = request.BedRoomCount,
-                BedCount = request.BedCount,
-                BathCount = request.BathCount,
-                LocationId = request.LocationId,
-                PricePerNight = request.PricePerNight,
-                CoverImage = request.CoverImage,
-                MainImage = request.MainImage,
-                CancellationPolicy = request.CancellationPolicy,
-                DateAdded = request.DateAdded,
-                LanguageId = request.LanguageId
-            };
-            _context.Add(accommodation);
-            _context.SaveChanges();
-        }
     }
 }

@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Accommodation\Accommodation\Command\Delete\" />
     <Folder Include="Accommodation\Accommodation\Command\Update\" />
   </ItemGroup>
 

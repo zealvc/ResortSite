@@ -38,3 +38,17 @@ D:\Resort Site Development\DB 4\ResortSite\Resort.Persistence\obj\Debug\netcorea
 D:\Resort Site Development\DB 4\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.dll
 D:\Resort Site Development\DB 4\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.pdb
 >>>>>>> 931bd2418ffb4b5197f01b8131cb79661dc6c51a
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Persistence.deps.json
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Persistence.runtimeconfig.json
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Persistence.runtimeconfig.dev.json
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Persistence.dll
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Persistence.pdb
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Domain.dll
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\bin\Debug\netcoreapp2.2\Resort.Domain.pdb
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.csprojAssemblyReference.cache
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.csproj.CoreCompileInputs.cache
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.AssemblyInfoInputs.cache
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.AssemblyInfo.cs
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.csproj.CopyComplete
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.dll
+E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Persistence\obj\Debug\netcoreapp2.2\Resort.Persistence.pdb

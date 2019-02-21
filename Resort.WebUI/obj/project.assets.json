@@ -4834,6 +4834,20 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Resort.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Resort.Domain": "1.0.0",
+          "Resort.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resort.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resort.Application.dll": {}
+        }
+      },
       "Resort.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -13232,6 +13246,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Resort.Application/1.0.0": {
+      "type": "project",
+      "path": "../Resort.Application/Resort.Application.csproj",
+      "msbuildProject": "../Resort.Application/Resort.Application.csproj"
+    },
     "Resort.Domain/1.0.0": {
       "type": "project",
       "path": "../Resort.Domain/Resort.Domain.csproj",
@@ -13254,6 +13273,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.0",
+      "Resort.Application >= 1.0.0",
       "Resort.Domain >= 1.0.0",
       "Resort.Infrastructure >= 1.0.0",
       "Resort.Persistence >= 1.0.0",
@@ -13290,6 +13310,9 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+            "E:\\Development\\Web Development\\ASP.NET Core\\ResortSite\\Resort.Application\\Resort.Application.csproj": {
+              "projectPath": "E:\\Development\\Web Development\\ASP.NET Core\\ResortSite\\Resort.Application\\Resort.Application.csproj"
+            },
             "E:\\Development\\Web Development\\ASP.NET Core\\ResortSite\\Resort.Domain\\Resort.Domain.csproj": {
               "projectPath": "E:\\Development\\Web Development\\ASP.NET Core\\ResortSite\\Resort.Domain\\Resort.Domain.csproj"
             },

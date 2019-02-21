@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Resort.Application\Resort.Application.csproj" />
     <ProjectReference Include="..\Resort.Domain\Resort.Domain.csproj" />
     <ProjectReference Include="..\Resort.Infrastructure\Resort.Infrastructure.csproj" />
     <ProjectReference Include="..\Resort.Persistence\Resort.Persistence.csproj" />

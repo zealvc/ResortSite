@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore;
+using Resort.Domain.Entities;
 
 namespace Resort.WebUI
 {
@@ -34,6 +35,8 @@ namespace Resort.WebUI
                 c.SwaggerDoc("v1", new Info { Title = "vKirirom", Version = "v1" });
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddDbContext<ResortSiteDbContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("ResortSiteConnectionString")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
