@@ -10,7 +10,7 @@ using Resort.Domain.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Resort.WebUI.Controllers
+namespace Resort.WebUI.Controllers.User.Accommodation.Accommodation
 {
     [Route("api/[controller]")]
     public class AccommodationController : Controller

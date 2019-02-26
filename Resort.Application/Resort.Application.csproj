@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -7,10 +7,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Resort.Domain\Resort.Domain.csproj" />
     <ProjectReference Include="..\Resort.Persistence\Resort.Persistence.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Accommodation\Accommodation\Command\Update\" />
   </ItemGroup>
 
 </Project>

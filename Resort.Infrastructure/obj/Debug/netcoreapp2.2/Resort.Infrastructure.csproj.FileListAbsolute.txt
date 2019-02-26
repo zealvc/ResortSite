@@ -25,3 +25,12 @@ E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Infrastructure\obj
 E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.AssemblyInfo.cs
 E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.dll
 E:\Development\Web Development\ASP.NET Core\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.pdb
+E:\Project\Chrish_dev\ResortSite\Resort.Infrastructure\bin\Debug\netcoreapp2.2\Resort.Infrastructure.deps.json
+E:\Project\Chrish_dev\ResortSite\Resort.Infrastructure\bin\Debug\netcoreapp2.2\Resort.Infrastructure.dll
+E:\Project\Chrish_dev\ResortSite\Resort.Infrastructure\bin\Debug\netcoreapp2.2\Resort.Infrastructure.pdb
+E:\Project\Chrish_dev\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.csprojAssemblyReference.cache
+E:\Project\Chrish_dev\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Project\Chrish_dev\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.AssemblyInfoInputs.cache
+E:\Project\Chrish_dev\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.AssemblyInfo.cs
+E:\Project\Chrish_dev\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.dll
+E:\Project\Chrish_dev\ResortSite\Resort.Infrastructure\obj\Debug\netcoreapp2.2\Resort.Infrastructure.pdb
