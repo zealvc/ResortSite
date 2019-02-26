@@ -3,6 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <!-- <ClientId>1055002010138-8qsq94s0rgs7ht12bbuvjqsia5dr28gj.apps.googleusercontent.com</ClientId>
+    <ClientSecret>ASgPoFNAcASDrV9V-RTZZbsr</ClientSecret>
+    <AppId>748139398891962</AppId>
+    <AppSecret>f7f94a98e94ff07f893705d77bad9c16</AppSecret> -->
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,4 +16,19 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Abstractions">
+      <HintPath>..\..\..\..\..\usr\local\share\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.authentication.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Resort.Application\Resort.Application.csproj" />
+    <ProjectReference Include="..\Resort.Common\Resort.Common.csproj" />
+    <ProjectReference Include="..\Resort.Domain\Resort.Domain.csproj" />
+    <ProjectReference Include="..\Resort.Infrastructure\Resort.Infrastructure.csproj" />
+    <ProjectReference Include="..\Resort.Persistence\Resort.Persistence.csproj" />
+  </ItemGroup>
 </Project>

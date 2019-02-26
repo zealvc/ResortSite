@@ -686,30 +686,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ZEAL\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/pensereyotdom/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Mom\\ResortSite\\Resort.Common\\Resort.Common.csproj",
+      "projectUniqueName": "/Users/pensereyotdom/Documents/ResortSite/Resort.Common/Resort.Common.csproj",
       "projectName": "Resort.Common",
-      "projectPath": "D:\\Mom\\ResortSite\\Resort.Common\\Resort.Common.csproj",
-      "packagesPath": "C:\\Users\\ZEAL\\.nuget\\packages\\",
-      "outputPath": "D:\\Mom\\ResortSite\\Resort.Common\\obj\\",
+      "projectPath": "/Users/pensereyotdom/Documents/ResortSite/Resort.Common/Resort.Common.csproj",
+      "packagesPath": "/Users/pensereyotdom/.nuget/packages/",
+      "outputPath": "/Users/pensereyotdom/Documents/ResortSite/Resort.Common/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ZEAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/pensereyotdom/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
