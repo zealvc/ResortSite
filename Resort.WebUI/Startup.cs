@@ -29,7 +29,7 @@ namespace Resort.WebUI
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ResortSiteDbContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("ResortSiteConnectionString")));
+            //services.AddDbContext<ResortSiteDbContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("ResortSiteConnectionString")));
             //services.AddDbContext<ApplicationDbContext>(options =>
             //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 

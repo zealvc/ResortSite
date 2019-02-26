@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{6D2DF2BD-439C-4692-8397-7CD607A0F73E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Resort.WebUI/Startup.cs">
     <Files>
-      <File FileName="Resort.WebUI/Startup.cs" Line="32" Column="23" />
+      <File FileName="Resort.WebUI/Startup.cs" Line="43" Column="17" />
       <File FileName="Resort.WebUI/appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
